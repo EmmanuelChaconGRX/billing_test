@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^datatranswebedi.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.datatranswebedi.com$
+  RewriteRule (.*)$ https://linux-prod.datatrans-inc.com/billing2/$1 [R=301,L]
+</IfModule>
